@@ -716,9 +716,9 @@ const Engine = (function () {
 					return new Promise(function (resolve, reject) {
 						promise.then(function (response) {
 							const cloned = new Response(response.clone().body, { 'headers': [['content-type', 'application/wasm']] });
-							Godot(me.config.getModuleConfig(loadPath, cloned)).then(function (module) {
+							window.OscherslebenStartup?.mark('engine_module_start_ms');Godot(me.config.getModuleConfig(loadPath, cloned)).then(function (module) {window.OscherslebenStartup?.mark('engine_module_end_ms');
 								const paths = me.config.persistentPaths;
-								module['initFS'](paths).then(function (err) {
+								window.OscherslebenStartup?.mark('filesystem_start_ms');module['initFS'](paths).then(function (err) {window.OscherslebenStartup?.mark('filesystem_end_ms');
 									me.rtenv = module;
 									if (me.config.unloadAfterInit) {
 										Engine.unload();
@@ -795,7 +795,7 @@ const Engine = (function () {
 							me.rtenv['copyToFS'](file.path, file.buffer);
 						}
 						preloader.preloadedFiles.length = 0; // Clear memory
-						me.rtenv['callMain'](me.config.args);
+						window.OscherslebenStartup?.mark('engine_main_start_ms');me.rtenv['callMain'](me.config.args);
 						initPromise = null;
 						me.installServiceWorker();
 						resolve();

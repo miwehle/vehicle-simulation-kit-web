@@ -7,6 +7,14 @@
   if (window.OscherslebenStartup) return;
   const p = performance;
   const marks = {
+    engine_module_start_ms: null,
+    engine_module_end_ms: null,
+    filesystem_start_ms: null,
+    filesystem_end_ms: null,
+    engine_main_start_ms: null,
+    autoload_extensions_init_ms: null,
+    autoload_extensions_ready_start_ms: null,
+    autoload_extensions_ready_end_ms: null,
     page_script_ms: p.now(), engine_start_ms: null, godot_script_start_ms: null,
     player_ready_start_ms: null, player_ready_end_ms: null, scene_ready_ms: null, ready_ms: null,
     graphics_start_ms: null, graphics_end_ms: null, lightmaps_start_ms: null, lightmaps_end_ms: null,
@@ -180,8 +188,8 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="build-01cabdbdcf56.icon.png" />
-<link rel="apple-touch-icon" href="build-01cabdbdcf56.apple-touch-icon.png"/>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="build-4890da52789e.icon.png" />
+<link rel="apple-touch-icon" href="build-4890da52789e.apple-touch-icon.png"/>
 
 	</head>
 	<body>
@@ -194,14 +202,14 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="build-01cabdbdcf56.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="build-4890da52789e.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
-		<script src="build-01cabdbdcf56.js"></script>
+		<script src="build-4890da52789e.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"build-01cabdbdcf56","experimentalVK":true,"fileSizes":{"build-01cabdbdcf56.pck":21180224,"build-01cabdbdcf56.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"build-4890da52789e","experimentalVK":true,"fileSizes":{"build-4890da52789e.pck":21180976,"build-4890da52789e.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -307,7 +315,7 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
-	<div style="position:fixed;top:4px;left:50%;transform:translateX(-50%);z-index:10000;pointer-events:none;background:#392800e8;color:#ffe29a;padding:3px 8px;border-radius:5px;font:12px system-ui">EXPERIMENTAL · 01cabdb</div>
+	<div style="position:fixed;top:4px;left:50%;transform:translateX(-50%);z-index:10000;pointer-events:none;background:#392800e8;color:#ffe29a;padding:3px 8px;border-radius:5px;font:12px system-ui">EXPERIMENTAL · 4890da5</div>
 </body>
 </html>
 

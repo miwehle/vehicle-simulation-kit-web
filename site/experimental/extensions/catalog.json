@@ -20,7 +20,7 @@
     "version": 1,
     "path": "res://extensions/cessna172/cessna_extension.tscn",
     "companion": true,
-    "sha256": "9a1cdff8e4cef3718dd2cc499cc0d3fd5d1c76caf107b37d2bd69aa1d2ab170c",
+    "sha256": "026da823bc460573f53fdc8293e01f0f26c86415e5e05bbc80a79c1fe77042b8",
     "url": "cessna172-1.zip"
   },
   "collisions": {
@@ -70,7 +70,7 @@
     "bundled": true,
     "registration": "res://extensions/landspeeder/register.gd",
     "default_vehicle": "landspeeder",
-    "sha256": "330c160a559b3efe34165795e192d99a19dd05f3dac811afb0dc8498ea6a6679",
+    "sha256": "908e924828c1b349a59e6e65ccc520de43780dffcf7392521d77773aa5dd0fdb",
     "url": "landspeeder-1.zip"
   },
   "multiplayer": {
@@ -102,7 +102,7 @@
         "reference_route": true
       }
     },
-    "sha256": "7304cadeba0480ea4871699e62860c66389a1e681d967c7bff34a2d69c3614fa",
+    "sha256": "fe1bcc9e6ae42a40468baa3dd4088fb4e516a0c9e9a93ca8e7f10ccabaa0dd4d",
     "url": "oschersleben-1.zip"
   },
   "ringflug": {
