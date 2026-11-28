@@ -17,7 +17,7 @@ cessna172:
   version: 1
   path: res://extensions/cessna172/cessna_extension.tscn
   companion: true
-  sha256: b26e7d764a687fc36cec3ba52594b18db5e3813a879dd82e45dee838b5ffdf19
+  sha256: 9a1cdff8e4cef3718dd2cc499cc0d3fd5d1c76caf107b37d2bd69aa1d2ab170c
   url: cessna172-1.zip
 collisions:
   title: Kollisionen
@@ -61,7 +61,7 @@ landspeeder:
   bundled: true
   registration: res://extensions/landspeeder/register.gd
   default_vehicle: landspeeder
-  sha256: 010877e0b9afcba55b25373e2c77e81b30d9e9476f6eb3dbc8c377d52a13c8b3
+  sha256: 330c160a559b3efe34165795e192d99a19dd05f3dac811afb0dc8498ea6a6679
   url: landspeeder-1.zip
 multiplayer:
   title: Multiplayer
@@ -88,7 +88,7 @@ oschersleben:
       height_reference: 0
       height_datum: NHN
       reference_route: true
-  sha256: d719973f15aed7ddd3dfff9cace831952243cc41b1d6369a1cfb92222419a817
+  sha256: 7304cadeba0480ea4871699e62860c66389a1e681d967c7bff34a2d69c3614fa
   url: oschersleben-1.zip
 ringflug:
   title: Ringparcours
