@@ -3,69 +3,106 @@ base_scene_installer:
   version: 1
   path: res://extensions/base_scene_installer/base_scene_installer.tscn
   companion: true
-  sha256: 7b2fa303fa93436b0acfaadb5b2ba186fcd928c4705e392383db79a96a7cbca7
+  sha256: 8e9239ceb7d888b454d94d24b727917646598941dbcfc83d1754fcd03e1984f2
   url: base_scene_installer-1.zip
+camera:
+  title: Kamera
+  version: 1
+  path: res://extensions/camera/camera_extension.tscn
+  companion: true
+  sha256: 32b4a7ab4ec58445f701518bb94d5e9c157cb6ca25c87f126a7420648cb25fd9
+  url: camera-1.zip
 cessna172:
   title: Cessna 172P · JSBSim
   version: 1
   path: res://extensions/cessna172/cessna_extension.tscn
   companion: true
-  sha256: 3734466d6b5f8b2ce2f57dd5a76cd78b1de47025b9d0c7621f0546046ce7c442
+  sha256: b26e7d764a687fc36cec3ba52594b18db5e3813a879dd82e45dee838b5ffdf19
   url: cessna172-1.zip
 collisions:
   title: Kollisionen
   version: 1
   path: res://extensions/collisions/collisions.tscn
   companion: true
-  sha256: e12f5dad50cf1bdf946d3970b65782703b71108581f9c455c4994adde3f923e0
+  sha256: 90558c72992134edf8d100762b036d2c41965c563a0a02953fbeaacb7acb506f
   url: collisions-1.zip
 diagnostics:
   title: Diagnose
   version: 1
   path: res://extensions/diagnostics/diagnostics.tscn
   companion: true
-  sha256: cd4a233af38094740ed179593cb673435db0f85686b860b1a4ceff02dd5b51e6
+  sha256: 454e9bef89f3a53ffbe8f753ad87523098e6e98c21bc75094fcf4613d93be0f6
   url: diagnostics-1.zip
 flight_path_assist:
   title: Flugassistent
   version: 1
   path: res://extensions/flight_path_assist/flight_path_assist.tscn
   companion: true
-  sha256: d795dcd30ad2986cf55e9a6d95914587ce5e701b631b76d403a4de23dc7b5393
+  sha256: 21af88899d0e08709ccc46d7102f7ca1cebf753874d06de24a2f79abffb138d6
   url: flight_path_assist-1.zip
 gamepad_monitor:
   title: Gamepad Monitor
   version: 1
   path: res://extensions/gamepad_monitor/gamepad_monitor.tscn
   companion: true
-  sha256: 9949feb1095f8f78afa4bcb645599f9c77224a1127c5b14d41fd6b38989d47e6
+  sha256: b8afaa0079849ea10dd018b85d2981275f2a89b5a219bcfb228d763119e3aab2
   url: gamepad_monitor-1.zip
 grip_feedback:
   title: Grip Feedback
   version: 1
   path: res://extensions/grip_feedback/grip_feedback.tscn
   companion: true
-  sha256: 826740ab86681b640d1e314f3bf141b1e58f43164384bd932ca2bd4e50787ab6
+  sha256: a6c1fe0c0149d15d4717392bacb0f7a27f8eb1c19f5d3885321c05868710124d
   url: grip_feedback-1.zip
+landspeeder:
+  title: Landspeeder
+  version: 1
+  companion: false
+  bundled: true
+  registration: res://extensions/landspeeder/register.gd
+  default_vehicle: landspeeder
+  sha256: 010877e0b9afcba55b25373e2c77e81b30d9e9476f6eb3dbc8c377d52a13c8b3
+  url: landspeeder-1.zip
 multiplayer:
   title: Multiplayer
   version: 1
   path: res://extensions/multiplayer/multiplayer.tscn
   companion: true
-  sha256: 268d94789c18bf67637722c99f387bb6323af8d1f71b66a07d3afaeb38741271
+  sha256: 6eb81c9a1b679bd07751d618d7e3cbbcec5c3f5248c126339873a7b255b77b2b
   url: multiplayer-1.zip
+oschersleben:
+  title: Oschersleben
+  version: 1
+  companion: false
+  bundled: true
+  bases:
+    oschersleben:
+      title: Oschersleben
+      description: Rennstrecke mit Boxengasse und Start-Ziel-Tribüne.
+      script: res://extensions/oschersleben/oschersleben.gd
+      graphics_options: res://extensions/oschersleben/graphics_options.gd
+      spawn:
+      - 0
+      - 0
+      heading: 0
+      height_reference: 0
+      height_datum: NHN
+      reference_route: true
+  sha256: d719973f15aed7ddd3dfff9cace831952243cc41b1d6369a1cfb92222419a817
+  url: oschersleben-1.zip
 ringflug:
   title: Ringparcours
   version: 1
   path: res://extensions/ringflug/ringflug.tscn
   component: res://extensions/ringflug/course.tscn
   companion: false
-  sha256: b316105c19c4af63cfa6013db173205458d0ac84eefe05e712fec0c4b61c1104
+  base_scene: oschersleben
+  sha256: 1452c5e03246dc2b9f8677cda18bf221c5cd2132d32122c1d067dd461faeac21
   url: ringflug-1.zip
 telemetry:
   title: Telemetrie
   version: 1
   path: res://extensions/telemetry/telemetry.tscn
   companion: true
-  sha256: cd8421f47a77fa8941263440958a627a14d0ca26667ca3d1db00b0130e8dea5d
+  sha256: f1dccc24d1e74d992c34e48d36dfe6531df49d1a0288018b89878a50e9f216a2
   url: telemetry-1.zip
